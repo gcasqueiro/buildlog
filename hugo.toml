@@ -1,0 +1,19 @@
+baseURL = 'https://buildlog.netlify.app/'
+languageCode = 'en-us'
+title = 'Build Log'
+theme = 'PaperMod'
+
+[params]
+  description = "Daily build log - apps, plugins, experiments"
+  author = "G. Casqueiro"
+  ShowReadingTime = false
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = true
+  
+[menu]
+  [[menu.main]]
+    name = "Archive"
+    url = "/posts/"
+    weight = 10
