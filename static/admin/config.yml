@@ -2,6 +2,7 @@ backend:
   name: github
   repo: gcasqueiro/buildlog
   branch: main
+  base_url: https://decapcms-oauth.vercel.app
 
 media_folder: "static/images"
 public_folder: "/images"
