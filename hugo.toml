@@ -1,19 +1,51 @@
-baseURL = 'https://buildlog.netlify.app/'
+baseURL = 'https://buildlog.pages.dev'
 languageCode = 'en-us'
-title = 'Build Log'
+title = 'Blender Add-on Build Log'
 theme = 'PaperMod'
 
+enableEmoji = true
+
 [params]
-  description = "Daily build log - apps, plugins, experiments"
+  description = "Daily Blender add-on development progress"
   author = "G. Casqueiro"
-  ShowReadingTime = false
-  ShowShareButtons = false
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = false
-  ShowCodeCopyButtons = true
   
-[menu]
-  [[menu.main]]
-    name = "Archive"
-    url = "/posts/"
-    weight = 10
+  showReadingTime = true
+  showShareButtons = false
+  showPostNavLinks = true
+  showBreadCrumbs = true
+  showCodeCopyButtons = true
+  showToc = true
+  
+  [params.homeInfoParams]
+    Title = "Blender Add-on Build Log"
+    Content = """
+    Daily coding sessions, experiments, and progress building Blender add-ons.
+    """
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/gcasqueiro"
+
+[[menu.main]]
+  name = "Posts"
+  url = "/posts/"
+  weight = 1
+
+[[menu.main]]
+  name = "Tags"
+  url = "/tags/"
+  weight = 2
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 3
+
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    lineNos = true
+    lineNumbersInTable = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
